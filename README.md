@@ -34,7 +34,8 @@ If the folder can't be read, grant access there, or add `Screenshotee.app` to Fu
 ## Signing note
 
 `build.sh` signs ad-hoc by default, so macOS may ask for permission again after each rebuild.
-Set `SIGN_ID="Apple Development: Your Name (TEAMID)"` for a stable identity.
+Set `SIGN_ID` for a stable identity, e.g. `SIGN_ID="Apple Development: Your Name (TEAMID)" ./build.sh`, or a free local
+self-signed code-signing certificate (Keychain Access > Certificate Assistant > Create a Certificate > type "Code Signing").
 
 ## License
 
